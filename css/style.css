@@ -28,6 +28,11 @@ nav {
    margin-left: -125px;
    margin-top: -80px;
 }
+
+.space {
+    margin-top: 10px;
+}
+
 .logo a {
     color: white;
     font-family: "Comfortaa", cursive;
@@ -36,9 +41,10 @@ nav {
     text-transform: uppercase;
     border: 1px solid white;
     text-decoration: none;
-    padding-left: 20px;
-    padding-right: 23px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 4px;
+    margin-left: 15px
 }
 
 .logo a:hover {
