@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img.jpg);
+    background-size: auto;
+    font-family: sans-serif;
+}
+
+nav {
+    float: right;
+    border: none;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 260px;
+   height: 90px;
+   position: absolute;
+   left: 50%;
+   top: 50%; 
+   margin-left: -125px;
+   margin-top: -80px;
+}
+.logo a {
+    color: white;
+    font-family: "Comfortaa", cursive;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 23px;
+    padding-top: 4px;
+}
+
+.logo a:hover {
+    color: #ff5462;
+    border-color: #ff5462;
+}
+
+ul {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+
+}
+
+.current {
+    border: 1px solid #ff5462;
+}
+
+.current a {
+    color: #ff5462;
+}
+
+.current:hover {
+    color: #ff5462;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+ul li:hover {
+    border: 1px solid white;
+}
+
+ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    box-sizing: border-box;
+    color: white;
+    font-size: 23px;
+    display: none;
+}
+
+@media (max-width:768px) {
+    .toggle {
+        display: block;
+    }
+    ul {
+        width: 100%;
+        display: none;
+    }
+
+    ul li {
+        display: block;
+        text-align: center;
+    }
+    
+    nav {
+        width: 100%
+    }
+    
+    .logo {
+        margin-top: -10px;
+    }
+}
+
+.active {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
