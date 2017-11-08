@@ -146,6 +146,9 @@ ul li a {
     .logo {
         margin-top: 40px;
     }
+    html {
+        background-size: 320px cover;
+    }
 }
 
 
