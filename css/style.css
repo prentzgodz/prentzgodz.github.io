@@ -17,6 +17,7 @@ nav {
     border: none;
     margin-top: 10px;
     padding-right: 10px;
+    font-family: "Comfortaa", cursive;
 }
 
 .logo {
@@ -96,7 +97,7 @@ ul li a {
     display: none;
 }
 
-@media (max-width:544px) {
+@media (max-width:590px) {
     .toggle {
         display: block;
     }
@@ -149,7 +150,53 @@ ul li a {
     }
 }
 
+.info-card h1 {
+    font-family: "Comfortaa", cursive;
+    color: #ff5462;
+    text-transform: uppercase;
+}
 
+.info-card-two h1 {
+    font-family: "Comfortaa", cursive;
+    color: #ff5462;
+    text-transform: uppercase;
+}
 
+.info-card {
+    width: 430px;
+   height: 300px;
+   position: fixed;
+   left: 10%;
+    overflow: auto;
+    position: relative;
+    padding-top: 100px;
+}
 
+.info-card-two {
+    width: 430px;
+   height: 300px;
+   position: fixed;
+   left: 10%;
+   top: 50%;
+    overflow: auto;
+    position: relative;
+}
 
+.info-card p {
+    font-family: "Comfortaa", cursive;
+    color: whitesmoke;
+}
+
+.info-card-two p {
+    font-family: "Comfortaa", cursive;
+    color: whitesmoke;
+}
+
+@media (max-width: 550px) {
+    .info-card {
+        text-align: center;
+    }
+    .info-card-two {
+        text-align: center;
+    }
+}
