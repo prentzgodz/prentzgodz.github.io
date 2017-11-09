@@ -1,7 +1,3 @@
-html {
-    
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -150,6 +146,7 @@ ul li a {
     .logo {
         margin-top: 50px;
         left: 48%;
+        top:60%;
     }
 }
 
@@ -172,7 +169,7 @@ ul li a {
    left: 10%;
     overflow: auto;
     position: relative;
-    padding-top: 100px;
+    padding-top: 130px;
 }
 
 .info-card-two {
@@ -199,13 +196,14 @@ ul li a {
     .info-card {
         text-align: center;
         max-width: 530px;
-        width: 82%;
+        width: 80%;
         height: auto;
+        padding-top: 80px;
     }
     .info-card-two {
         text-align: center;
         max-width: 530px;
-        width: 82%;
+        width: 80%;
         height: auto;
     }
 }
