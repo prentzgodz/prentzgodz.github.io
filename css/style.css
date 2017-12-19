@@ -1,8 +1,21 @@
+/* Highlight Start */
+
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}
+
+/* Highlight End */
+
+/* Background Start */
+
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    max-width: 100%;
+    min-width: 320px;
     
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img.jpg)no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -11,45 +24,16 @@ body {
     background-size: cover;
 }
 
+/* Background End */
+
+/* Navigation Start */
+
 nav {
     float: right;
     border: none;
     margin-top: 10px;
     padding-right: 10px;
     font-family: "Comfortaa", cursive;
-}
-
-.logo {
-    width: 260px;
-   height: 90px;
-   position: absolute;
-   left: 50%;
-   top: 50%; 
-   margin-left: -125px;
-   margin-top: -80px;
-}
-
-.space {
-    margin-top: 10px;
-}
-
-.logo a {
-    color: white;
-    font-family: "Comfortaa", cursive;
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    border: 1px solid white;
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 4px;
-    margin-left: 15px
-}
-
-.logo a:hover {
-    color: #ff5462;
-    border-color: #ff5462;
 }
 
 ul {
@@ -96,7 +80,7 @@ ul li a {
     display: none;
 }
 
-@media (max-width:590px) {
+@media (max-width:700px) {
     .toggle {
         display: block;
     }
@@ -146,9 +130,62 @@ ul li a {
     .logo {
         margin-top: 50px;
         left: 48%;
-        top:60%;
+        top:70%;
     }
 }
+
+/* Navigation End */
+
+/* Home Start */
+
+.logo {
+    width: 279px;
+   height: 140px;
+   position: fixed;
+    overflow: auto;
+   left: 50%;
+   top: 53%; 
+   margin-left: -125px;
+   margin-top: -80px;
+}
+
+
+.logo a {
+    color: white;
+    font-family: "Comfortaa", cursive;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    margin-left: 15px
+}
+
+.logo a:hover {
+    color: #ff5462;
+    border-color: #ff5462;
+}
+
+.space {
+    margin-top: 10px;
+}
+
+/* Home End */
+
+.info-card {
+    width: 490px;
+   height: 300px;
+   position: fixed;
+   left: 10%;
+    overflow: auto;
+    position: relative;
+    padding-top: 130px;
+}
+
+/* About Us Start */
 
 .info-card h1 {
     font-family: "Comfortaa", cursive;
@@ -164,7 +201,7 @@ ul li a {
 
 .info-card {
     width: 490px;
-   height: 300px;
+   height: 230px;
    position: fixed;
    left: 10%;
     overflow: auto;
@@ -207,4 +244,406 @@ ul li a {
         height: auto;
     }
 }
+
+/* About Us End */
+
+/* Contact Us Start */
+
+.contact-us {
+    width: 620px;
+   height: 230px;
+   position: fixed;
+   left: 10%;
+    overflow: auto;
+    position: relative;
+    padding-top: 100px;
+}
+
+.contact-us a {
+    text-decoration: none;
+}
+
+.contact-us p {
+    font-family: "Comfortaa", cursive;
+    color: whitesmoke;
+}
+
+.contact-us h1 {
+    font-family: "Comfortaa", cursive;
+    color: #ff5462;
+    text-transform: uppercase;
+}
+
+.location {
+    font-family: "Comfortaa", cursive;
+    color: lightblue;
+    text-decoration: none;
+}
+
+@media (max-width: 550px) {
+    .contact-us {
+        text-align: center;
+        max-width: 530px;
+        width: 80%;
+        overflow: hidden;
+    }
+    .social-footer {
+        left: 20%;
+    }
+}
+
+/* Contact Us End */
+
+/* Social Footer Start */
+
+.social-footer {
+    position: fixed;
+    position: relative;
+    width: 60%;
+    padding-top: 10px;
+}
+
+/*Social Footer End */
+
+/* IE Users Start */
+
+.alert{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1rem;
+    display: none;
+    font-family: "Comfortaa", cursive;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .alert {
+        display: block;
+    }
+}
+
+/* IE Users End */
+
+/* Linup Start */
+
+.lineup {
+    width: 80%;
+   position: fixed;
+   left: 10%;
+    overflow: auto;
+    position: relative;
+    padding-top: 130px;
+}
+
+#customers {
+    font-family: "Comfortaa", cursive;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: white;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: #ff5462;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+}
+
+@media (min-width: 913px) {
+    .lineup {
+        height: 600px;
+    }
+}
+
+@media (max-width: 909px) {
+    .lineup {
+        height: 1200px;
+    }
+}
+
+@media (max-width: 360px) {
+    .lineup {
+        height: 1100px;
+    }
+}
+
+@media (max-width: 375px) {
+    .lineup {
+        height: 1290px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .lineup {
+        height: 1290px;
+    }
+}
+
+/* Lineup End */
+
+/* Ticket Start */
+
+.booking h1{
+    color: #ff5462;
+    text-transform: uppercase;
+    font-family: "Comfortaa", cursive;
+}
+
+.booking p{
+    color: white;
+    text-transform: uppercase;
+    font-family: "Comfortaa", cursive;
+}
+
+.booking form{
+    font-family: "Comfortaa", cursive;
+    color: white;
+}
+
+.booking input{
+    font-family: "Comfortaa", cursive;
+    margin-top: 10px;
+}
+
+.booking {
+    position: fixed;
+    left: 10%;
+    width: 80%;
+    overflow: auto;
+    position: relative;
+    padding-top: 100px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button{
+    width: 100%;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Comfortaa", cursive;
+}
+
+button:hover {
+    background-color: #ff5462;
+}
+
+/* Ticket End */
+
+/* Snapchat Start */
+
+.banner {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    background: #fff;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.banner-text h1 {
+    font-family: "Comfortaa", cursive;
+    text-transform: uppercase;
+    color: #ff5462;
+    text-align: center;
+    margin: 100px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.banner-text p {
+    font-family: "Comfortaa", cursive;
+    text-align: center;
+    color: Black; 
+}
+
+/* Snapchat End */
+
+/* Modal Box Start */
+
+.modalDialog {
+    position: fixed;
+    font-family: "Comfortaa", cursive;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.5);
+    z-index: 99999;
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog p {
+    color: black;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.close {
+    color: #ff5462;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+	top: 3px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 1px;
+}
+
+/* Modal Box End */
+
+/* Feedback Start */
+
+.feedback h1{
+    color: #ff5462;
+    text-transform: uppercase;
+    font-family: "Comfortaa", cursive;
+}
+
+.feedback p{
+    color: white;
+    text-transform: uppercase;
+    font-family: "Comfortaa", cursive;
+}
+
+.feedback form{
+    font-family: "Comfortaa", cursive;
+    color: white;
+}
+
+.feedback input{
+    font-family: "Comfortaa", cursive;
+    margin-top: 10px;
+}
+
+.feedback {
+    position: fixed;
+    left: 10%;
+    width: 80%;
+    overflow: auto;
+    position: relative;
+    margin: 0;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=feedback], select {
+    width: 100%;
+    padding: 30px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button{
+    width: 100%;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Comfortaa", cursive;
+}
+
+button:hover {
+    background-color: #ff5462;
+}
+
+/* Feedback End */
+
+
+
+
+
+
 
