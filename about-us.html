@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    
+    <!--- All Needed Links, Viewport & title --->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>MaccFest | About Us</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/maccfest_logo.ico"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    </head>
+<body>
+    
+    <!--- Navigation --->
+    <nav>
+        <div class="toggle">
+            <div class="menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li class="current"><a href="about-us.html">ABOUT US</a></li>
+            <li><a href="contact-us.html">CONTACT US</a></li>
+            <li><a href="news.html">LINE-UP</a></li>
+            <li><a href="tickets.html">TICKETS</a></li>
+        </ul>
+    </nav>
+    
+    <!--- Dropdown Toggle (JavaScript) --->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('ul').toggleClass('active');
+            })
+        })
+    </script>
+    
+    <!--- About Us Information --->
+    <div class="content">
+        <div class="info-card">
+            <h1>about us</h1>
+            <p>The first ever Macclesfield Festival took place on 22nd July 2017 with a massive turnout of 7,500 people enjoying 5 stages, over 50 live acts, a Giant Funfair, VIP Clubhouse, Strongman Competition, Owl Display, Artisan Market, Film Props, Pony Trekking, Zorbing and much more. We're delighted to be returning again in 2018 with an even bigger and better event.</p>
+        </div>
+    </div>
+    <div class="content-2">
+        <div class="info-card-two">
+            <h1>Who are we ?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo metus. Ut arcu turpis, sodales fermentum nibh nec, consectetur pellentesque ipsum. Integer feugiat elit vitae ultrices laoreet. Nulla porta ex lectus, ut bibendum nunc mattis eleifend. In pellentesque auctor tincidunt. Curabitur rhoncus sollicitudin nisi quis ultrices. Proin semper maximus risus, eget ultrices lectus eleifend vitae. In et pharetra augue, eu ultricies felis. Nullam dictum dignissim dictum. Ut molestie nec orci nec rhoncus.</p>
+        </div>
+    </div>
+</body>
+</html>
